@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.log{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: lightgray;
+    border: 1px solid black;
+
+    .log__button{
+        padding: 5px;
+        color: black;
+        font-weight: 800;
+        border-radius: 2px;
+        border: 2px solid gray;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .log{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+  }

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.log-table-heading{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: white;
+}
+
+.input-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px; 
+    text-align: right;
+    gap: 5px;
+    border-radius: 10px;
+    border: 2px solid lightgray;
+    margin-left: 10px;
+    margin-right: 10px;
+    .input-box__input{
+        border-radius: 2px;
+        border: 2px solid lightgray;
+    }
+    .input-box__button{
+        color: black;
+        font-weight: 800;
+        border-radius: 2px;
+        border: 2px solid lightgray;
+    }
+}
