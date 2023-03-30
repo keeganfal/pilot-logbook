@@ -114,7 +114,7 @@ function Home() {
 
   return (
     <div className="main">
-      <h1>Pilots Logbook</h1>
+      <h1 className="main--heading">PILOTS LOGBOOK</h1>
       <form className="input-box" onSubmit={handlePost}><br/>
         Created by: 
         <input type="text" name="createdBy" value={createdBy} onChange={(e)=>{setCreatedBy(e.target.value)}} className="input-box__input"/><br/>
@@ -130,7 +130,7 @@ function Home() {
         <input type="text" name="departure" value={departure} onChange={(e)=>{setDeparture(e.target.value)}} className="input-box__input"/><br/>
         Destination:
         <input type="text" name="destination" value={destination} onChange={(e)=>{setDestination(e.target.value)}} className="input-box__input"/><br/>
-        Pic or Dual:
+        PIC or Dual:
         <select type="text" name="picOrDual" value={picOrDual} onChange={(e)=>{setPicOrDual(e.target.value)}} className="input-box__input"> <option value="">--Select an option--</option> <option value="PIC">PIC</option> <option value="Dual">Dual</option></select><br/>
         Single or Multi:
         <select type="text" name="singleOrMulti" value={singleOrMulti} onChange={(e)=>{setSingleOrMulti(e.target.value)}} className="input-box__input"> <option value="">--Select an option--</option> <option value="Single">Single</option> <option value="Muli">Multi</option></select><br/>
@@ -138,7 +138,7 @@ function Home() {
         <select type="text" name="dayOrNight" value={dayOrNight} onChange={(e)=>{setDayOrNight(e.target.value)}} className="input-box__input"> <option value="">--Select an option--</option> <option value="Day">Day</option> <option value="Night">Night</option></select><br/>
         Origin country:
         <input type="text" name="originCountry" value={originCountry} onChange={(e)=>{setOriginCountry(e.target.value)}} className="input-box__input"/><br/>
-        <button className="input-box__button">Add Log</button>
+        <button className="input-box__button">ADD LOG</button>
       </form>
 
       <div className="log-table-heading">
@@ -149,9 +149,9 @@ function Home() {
         <h3 className="log-table-heading__item">Captain</h3>
         <h3 className="log-table-heading__item">Departure</h3>
         <h3 className="log-table-heading__item">Destination</h3>
-        <h3 className="log-table-heading__item">PicOrDual</h3>
-        <h3 className="log-table-heading__item">SingleOrMulti</h3>
-        <h3 className="log-table-heading__item">DayOrNight</h3>
+        <h3 className="log-table-heading__item">PIC or Dual</h3>
+        <h3 className="log-table-heading__item">Single or Multi</h3>
+        <h3 className="log-table-heading__item">Day or Night</h3>
       </div>
       <div className="logs">{logs}</div>
     </div>

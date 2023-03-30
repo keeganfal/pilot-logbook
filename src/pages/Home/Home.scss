@@ -1,32 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@700&family=Monofett&family=Roboto&display=swap');
+
 *{
     font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    
+    padding: 10px;
+
+    .main--heading{
+        text-align: center;
+        font-family: 'Monofett', cursive;
+        color: #1985A1;
+        font-size: 50px;
+    }
 }
 
 .log-table-heading{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    background-color: white;
+    background-color: #C5C3C6;
+    justify-items: center;
+    color: #46494C;
+    border: 2px solid #4C5C68;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: 'B612', sans-serif;
+    .log-table-heading__item{
+        font-size: 16px;
+    }
 }
 
 .input-box{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 20px; 
+    margin-bottom: 10px;
     text-align: right;
     gap: 5px;
     border-radius: 10px;
-    border: 2px solid lightgray;
+    border: 2px solid #4C5C68;
+    background-color: #C5C3C6;
     margin-left: 10px;
     margin-right: 10px;
+    color: #46494C;
+    font-family: 'B612', sans-serif;
+    font-size: large;
     .input-box__input{
+        background-color: #DCDCDD;
         border-radius: 2px;
-        border: 2px solid lightgray;
+        border: 2px solid #4C5C68;
     }
     .input-box__button{
-        color: black;
+        color: #1985A1;
+        background-color: #4C5C68;
+        font-size: large;
         font-weight: 800;
         border-radius: 2px;
-        border: 2px solid lightgray;
+        border: 2px solid #4C5C68;
     }
+    
 }
